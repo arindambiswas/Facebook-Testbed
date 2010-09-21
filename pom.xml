@@ -19,6 +19,14 @@
 	        <name>Repository for The Revere Group's Hibernate Generic DAO framework</name>
 	        <url>http://hibernate-generic-dao.googlecode.com/svn/trunk/maven-repo/</url>
 	</repository>
+    <repository>
+      <id>sonatype-google-snapshot</id>
+      <name>Facebook Java API Snapshot repository</name>
+      <url>http://oss.sonatype.org/content/repositories/googlecode-snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
   <dependencies>
  <dependency>
@@ -26,5 +34,19 @@
         <artifactId>trg-dao-hibernate</artifactId>
         <version>0.5.1</version> <!-- or whatever the latest version is -->
 </dependency> 
+ <dependency>
+ 	<groupId>com.google.code.facebookapi</groupId>
+ 	<artifactId>parent-pom</artifactId>
+ 	<version>3.0.4</version>
+ 	<type>pom</type>
+ 	<scope>compile</scope>
+ </dependency>
+ <dependency>
+ 	<groupId>com.google.code.facebookapi</groupId>
+ 	<artifactId>facebook-java-api</artifactId>
+ 	<version>3.0.4</version>
+ 	<type>jar</type>
+ 	<scope>compile</scope>
+ </dependency>
   </dependencies>
 </project>
