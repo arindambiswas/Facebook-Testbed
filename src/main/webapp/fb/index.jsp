@@ -4,9 +4,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Facebook Testbed App</title>
 </head>
 <body>
- Hello World
+<div id="fb-root"></div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({appId: 'your app id', status: true, cookie: true,
+             xfbml: true});
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
 </body>
 </html>
