@@ -4,6 +4,17 @@
   <artifactId>fbtestbed</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
+  <developers>
+  	<developer>
+  		<id>arindam.biswas</id>
+  		<name>Arindam Biswas</name>
+  		<email>arindam.biswas@collectivezen.com</email>
+  		<organization>CollectiveZen</organization>
+  		<organizationUrl>http://www.collectivezen.com</organizationUrl>
+  		<roles>
+  		</roles>
+  	</developer>
+  </developers>
   <build>
   	<plugins>
   		<plugin>
@@ -12,6 +23,8 @@
   			<version>1.0</version>
   		</plugin>
   	</plugins>
+  	<finalName>fbtestbed</finalName>
+  	<defaultGoal>compile</defaultGoal>
   </build>
   <repositories>
 	<repository>
