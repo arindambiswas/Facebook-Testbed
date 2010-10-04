@@ -20,5 +20,9 @@ This installs the jar in your local mvn repo, and then add the following depende
   <version>1.5.3</version>
 </dependency>
 
+NOTE : For the purpose of this example, the same has been included in the etc/lib/java/ folder (restfb-1.6.jar)
+
+
+
 
 
