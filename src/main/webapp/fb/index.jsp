@@ -3,9 +3,9 @@
     
  <%
  
- 	DefaultFacebookClient pubFBClient = new DefaultFacebookClient();
+ 	//DefaultFacebookClient pubFBClient = new DefaultFacebookClient();
  
- 	User user = pubFBClient.fetchObject("me", User.class);
+ 	//User user = pubFBClient.fetchObject("me", User.class);
  %> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -33,15 +33,6 @@
 </head>
 <body>
 	<div id="fb-root"></div>
-
-<fb:serverFbml style="width: 755px;">  
-     <script type="text/fbml">
-<fb:if-is-app-user>
-  	
-  <fb:else>You should sign up and play!</fb:else>
-</fb:if-is-app-user>
-    </script>
-</fb:serverFbml>
 <br />
 
 <div id="tabs">
