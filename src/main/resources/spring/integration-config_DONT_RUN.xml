@@ -11,14 +11,15 @@
 
 	<channel id="fromFlex"/>
 
+<!--
 	<inbound-channel-adapter ref="counter" method="next" channel="toFlex">
 		<poller max-messages-per-poll="1">
 			<interval-trigger interval="5000"/>
 		</poller>
 	</inbound-channel-adapter>
 
-	<service-activator input-channel="fromFlex" ref="counter" method="handle"/>
 	
+	<service-activator input-channel="fromFlex" ref="counter" method="handle"/>
 	<beans:bean id="counter" class="org.springframework.flex.samples.integration.Counter"/>
-
+-->
 </beans:beans>

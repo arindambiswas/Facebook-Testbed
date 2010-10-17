@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+	<type-mapping>
+		<sql-type jdbc-type="INTEGER" hibernate-type="int"/>
+		<sql-type jdbc-type="FLOAT" hibernate-type="float"/>
+		<sql-type jdbc-type="REAL" hibernate-type="float"/>
+		<sql-type jdbc-type="NUMERIC" hibernate-type="long"/>
+		<sql-type jdbc-type="VARCHAR" length="1" hibernate-type="char"/>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"/>
+	</type-mapping>
+
+	<table-filter match-name="member" match-schema="public" 
+		package="com.collectivezen.fbtestbed.hb" />
+
+	<table schema="public" name="member" class="com.collectivezen.fbtestbed.hb.Member">
+		<primary-key>
+			<generator class="sequence"> 
+				<param name="sequence">member_member_id_seq</param>
+			</generator>
+			<key-column name="member_id" property="memberId" />
+		</primary-key>
+		<column name="fb_id" property="fbId" />
+		<column name="fb_access_token" property="fbAccessToken" />
+		<column name="is_valid_token" property="isValidToken" />
+	</table>
+
+</hibernate-reverse-engineering>
