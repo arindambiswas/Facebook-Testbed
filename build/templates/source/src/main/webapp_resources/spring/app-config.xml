@@ -16,6 +16,9 @@
 
 	<context:property-placeholder location="classpath:jdbc/target-postgres.properties"/>
 
+	<bean id="helloWorldService" class="@@@main_package@@@.remote.HelloWorldService" />
+	<bean id="memberService" class="@@@main_package@@@.service.MemberService" />
+
 	<import resource="app-persistence.xml" />	
 	<!-- Implementation of ProductDAO using low-level JDBC 
 	<bean id="productService" class="org.springframework.flex.samples.product.ProductDAO">

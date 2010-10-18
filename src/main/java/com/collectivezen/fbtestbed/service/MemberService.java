@@ -7,13 +7,12 @@ import org.springframework.stereotype.Service;
 
 import com.collectivezen.fbtestbed.dao.interfaces.MemberDAO;
 import com.collectivezen.fbtestbed.hb.Member;
-import com.collectivezen.fbtestbed.service.interfaces.MemberService;
 import com.trg.search.ISearch;
 import com.trg.search.Search;
 import com.trg.search.SearchResult;
 
 @Service
-public class MemberServiceImpl implements MemberService
+public class MemberService
 {
 
 	MemberDAO dao;

@@ -1,11 +1,5 @@
 package com.collectivezen.fbtestbed.web;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.UUID;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -17,9 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.collectivezen.fbtestbed.hb.Member;
-import com.collectivezen.fbtestbed.service.interfaces.MemberService;
+import com.collectivezen.fbtestbed.service.MemberService;
 import com.trg.search.Search;
-import com.trg.search.SearchResult;
 
 @Controller
 public class MemberController

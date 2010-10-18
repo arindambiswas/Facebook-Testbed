@@ -83,12 +83,8 @@
 						<directory>src/main/webapp/WEB-INF/hibernate</directory>
 					</fileset>
 					<fileset>
-						<directory>src/main/webapp/WEB-INF/flex</directory>
-					</fileset>
-					<fileset>
 						<directory>src/main/webapp/WEB-INF</directory>
 						<includes>
-							<include>flex-servlet.xml</include>
 							<include>*.properties</include>
 						</includes>
 					</fileset>
