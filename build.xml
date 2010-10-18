@@ -126,16 +126,10 @@
 			<arg value="${res.dir}/hibernate/hibernate.reveng.xml" />
 			<classpath>
 				<pathelement location="${build.dir}/bin" />
-				<path refid="lib.compiled" />
+				<path refid="antlib.path" />
 			</classpath>
 		</java>
 	</target>
-	
-    <path id="lib.compiled">
-        <fileset dir="${webapp.dir}/WEB-INF/lib">
-            <include name="*.jar"/>
-        </fileset>
-    </path>
 	
 	<target name="all" depends="generate-reveng, generate-domain">
 	</target>
