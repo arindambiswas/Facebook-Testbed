@@ -9,8 +9,8 @@
       <description></description>
       <columns>
         <net.java.amateras.db.visual.model.ColumnModel>
-          <columnName>memberId</columnName>
-          <logicalName>memberId</logicalName>
+          <columnName>member_id</columnName>
+          <logicalName>member_id</logicalName>
           <columnType class="net.java.amateras.db.dialect.ColumnType">
             <name>BIGSERIAL</name>
             <logicalName>Serial</logicalName>
@@ -25,8 +25,8 @@
           <defaultValue></defaultValue>
         </net.java.amateras.db.visual.model.ColumnModel>
         <net.java.amateras.db.visual.model.ColumnModel>
-          <columnName>fbId</columnName>
-          <logicalName>fbId</logicalName>
+          <columnName>fb_id</columnName>
+          <logicalName>fb_id</logicalName>
           <columnType class="net.java.amateras.db.dialect.ColumnType">
             <name>BIGINT</name>
             <logicalName>Integer</logicalName>
@@ -41,8 +41,8 @@
           <defaultValue></defaultValue>
         </net.java.amateras.db.visual.model.ColumnModel>
         <net.java.amateras.db.visual.model.ColumnModel>
-          <columnName>fbAccessToken</columnName>
-          <logicalName>fbAccessToken</logicalName>
+          <columnName>fb_access_token</columnName>
+          <logicalName>fb_access_token</logicalName>
           <columnType class="net.java.amateras.db.dialect.ColumnType">
             <name>VARCHAR</name>
             <logicalName>String</logicalName>
@@ -57,8 +57,8 @@
           <defaultValue></defaultValue>
         </net.java.amateras.db.visual.model.ColumnModel>
         <net.java.amateras.db.visual.model.ColumnModel>
-          <columnName>isValidToken</columnName>
-          <logicalName>isValidToken</logicalName>
+          <columnName>is_valid_token</columnName>
+          <logicalName>is_valid_token</logicalName>
           <columnType class="net.java.amateras.db.dialect.ColumnType">
             <name>BOOLEAN</name>
             <logicalName>Boolean</logicalName>
