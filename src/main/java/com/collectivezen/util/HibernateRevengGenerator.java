@@ -51,7 +51,7 @@ public class HibernateRevengGenerator
 			Connection jdbcConnection = DriverManager.getConnection(
 					databaseName, DB_USERNAME, DB_PASSWORD);
 			System.out
-					.println("In Test :: main..." + jdbcConnection.toString());
+					.println("Have secured connection with Database" + jdbcConnection.toString());
 			Statement stmt = jdbcConnection.createStatement();
 			Statement stmt1 = jdbcConnection.createStatement();
 			ResultSet result = stmt
@@ -289,5 +289,14 @@ public class HibernateRevengGenerator
 //		test
 //				.setOutputFileName("/Users/arindam/Documents/workspace/AS3_workspace/Kalki/Projects/AB/Facebook-Testbed/src/main/resources/hibernate.reveng.xml");
 		test.createConfigFile();
+		
+		System.out.println("Generated hibernate.reveng.xml with the following parameters :");
+
+		System.out.println("\t DB_CONNECTION_URL : "+ DB_CONNECTION_URL);
+		System.out.println("\t DB_USERNAME : "+ DB_USERNAME);
+		System.out.println("\t DB_PASSWORD : "+ DB_PASSWORD);
+		System.out.println("\t PACKAGE_NAME : "+ PACKAGE_NAME);
+		System.out.println("\t OUTPUT_FILE_NAME : "+ OUTPUT_FILE_NAME);
+		
 	}
 }

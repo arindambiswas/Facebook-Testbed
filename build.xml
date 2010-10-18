@@ -1,6 +1,6 @@
-<project name="lifeblood" 
+<project name="CollectiveZen - fbtestbed" 
 	xmlns:artifact="antlib:org.apache.maven.artifact.ant"
-	default="generate-domain">
+	default="all">
    
 	<property file="user.properties"/>
 	<property file="build.properties"/>
@@ -136,5 +136,8 @@
             <include name="*.jar"/>
         </fileset>
     </path>
+	
+	<target name="all" depends="generate-reveng, generate-domain">
+	</target>
 
 </project>

@@ -54,7 +54,7 @@
 			<configuration>
 				<webResources>
 					<resource>
-						<directory>${basedir}/src/main/resources</directory>
+						<directory>${basedir}/src/main/webapp_resources</directory>
 						<targetPath>WEB-INF</targetPath>
 					</resource>
 				</webResources>
@@ -264,7 +264,7 @@
     	<type>jar</type>
     	<scope>compile</scope>
     </dependency>	
-
+  
 	<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -321,6 +321,12 @@
       	<version>3.4.0.GA</version>
       	<type>jar</type>
       	<scope>compile</scope>
+      	<exclusions>
+            <exclusion>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+            </exclusion>
+        </exclusions>
       </dependency>
 	<dependency>
       	<groupId>org.hibernate</groupId>
@@ -328,6 +334,12 @@
       	<version>3.4.0.GA</version>
       	<type>jar</type>
       	<scope>compile</scope>
+      	<exclusions>
+            <exclusion>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+            </exclusion>
+        </exclusions>
       </dependency>
 	<dependency>
       	<groupId>org.hibernate</groupId>
@@ -335,9 +347,22 @@
       	<version>3.3.2.GA</version>
       	<type>jar</type>
       	<scope>compile</scope>
+      	<exclusions>
+            <exclusion>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+            </exclusion>
+        </exclusions>
       </dependency>
 
 	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>3.0.4.RELEASE</version>
+		<type>jar</type>
+		<scope>compile</scope>
+	</dependency>
   </dependencies>
   
   
