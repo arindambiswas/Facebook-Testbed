@@ -179,6 +179,7 @@
 	 	<type>jar</type>
 	 	<scope>compile</scope>
 	 </dependency>
+<!--  	 
 	 <dependency>
 	 	<groupId>com.restfb</groupId>
 	 	<artifactId>restfb</artifactId>
@@ -186,7 +187,7 @@
 	 	<type>jar</type>
 	 	<scope>compile</scope>
 	 </dependency>
-	
+-->	
 		<dependency>
 			<groupId>org.springframework.integration</groupId>
 			<artifactId>spring-integration-core</artifactId>
