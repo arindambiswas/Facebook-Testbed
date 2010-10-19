@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.collectivezen.fbtestbed.hb.Member;
@@ -55,6 +56,29 @@ public class MemberController
 		}
 
 		return mav;
+	}
+
+	@RequestMapping("/member/ajax/details.do")
+	public @ResponseBody 
+	Member ajaxDetails(@RequestParam(value="id", required = true) String memberId,
+			HttpServletRequest request)
+	{
+		System.out.println("responding to /member/ajax/details.do");
+		Search search = new Search();
+		
+		Member member = null;
+		try
+		{
+			search.addFilterEqual("memberId", memberId);
+			member = memberService.searchUnique(search);
+			
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+
+		return member;
 	}
 
 	public static void main(String[] args)
