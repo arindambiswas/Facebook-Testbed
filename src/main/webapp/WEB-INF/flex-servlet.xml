@@ -8,16 +8,6 @@
 		http://www.springframework.org/schema/flex 
 		http://www.springframework.org/schema/flex/spring-flex-1.0.xsd">
  
-	<flex:message-broker>
-		<flex:message-service
-			default-channels="my-streaming-amf,my-longpolling-amf,my-polling-amf" />
-<!--		
-		<flex:secured />
--->		
-	</flex:message-broker>
-
-	<flex:remoting-destination ref="helloWorldService" />
-	<flex:remoting-destination ref="memberService" />
 
 	<!-- Expose the productService bean for BlazeDS remoting 
 	<flex:remoting-destination ref="productService" />

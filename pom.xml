@@ -374,10 +374,28 @@
 		<type>jar</type>
 		<scope>compile</scope>
 	</dependency>
+	<dependency>
+		<groupId>joda-time</groupId>
+		<artifactId>joda-time</artifactId>
+		<version>1.6.2</version>
+		<type>jar</type>
+		<scope>compile</scope>
+	</dependency>
+	<dependency>
+		<groupId>joda-time</groupId>
+		<artifactId>joda-time-hibernate</artifactId>
+		<version>1.2</version>
+		<type>jar</type>
+		<scope>compile</scope>
+	</dependency>
+	<dependency>
+		<groupId>net.digitalprimates</groupId>
+		<artifactId>dpHibernate</artifactId>
+		<version>1.0.17</version>
+		<type>jar</type>
+		<scope>compile</scope>
+	</dependency>
   </dependencies>
-  
-  
-  
   
  <properties>
 	  <blazeds.version>4.0.0.14931</blazeds.version>

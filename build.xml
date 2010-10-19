@@ -61,6 +61,7 @@
          </hbmtemplate>
       </hibernatetool>
 
+<!--
 		<replace dir="${hb.output.dir}" summary="true">
 			<include name="**/*.java"/>
 			<replacetoken><![CDATA[(fetch=FetchType.LAZY)]]></replacetoken>
@@ -80,7 +81,7 @@
 			<include name="**/*.java"/>
 			<replacetoken><![CDATA[name="generator", ]]></replacetoken>
 		</replace>	
-
+-->
    </target>
 
 	<target name="replace-props" depends="add_templates">
