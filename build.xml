@@ -61,6 +61,15 @@
          </hbmtemplate>
       </hibernatetool>
 
+		<echo message="Making changes to HB POJOS in : ${hb.output.dir}"></echo>
+		<replace dir="${hb.output.dir}" 
+			value="extends net.digitalprimates.persistence.hibernate.proxy.HibernateProxy implements" 
+			summary="true">
+			
+			<include name="**/*.java"/>
+			<replacetoken><![CDATA[implements]]></replacetoken>
+		</replace>
+
 <!--
 		<replace dir="${hb.output.dir}" summary="true">
 			<include name="**/*.java"/>
